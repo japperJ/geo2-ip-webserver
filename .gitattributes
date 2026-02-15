@@ -1,0 +1,22 @@
+# Repository line-ending normalization - prevents "LF will be replaced by CRLF" warnings on Windows
+# Default: let Git decide for text files and normalize in the repo
+* text=auto
+
+# Force LF for files that should keep Unix-style line endings
+*.md     text eol=lf
+*.py     text eol=lf
+*.sh     text eol=lf
+*.yml    text eol=lf
+*.yaml   text eol=lf
+*.json   text eol=lf
+*.js     text eol=lf
+*.ts     text eol=lf
+*.tsx    text eol=lf
+
+# Binary files
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.ico    binary
+*.pdf    binary
